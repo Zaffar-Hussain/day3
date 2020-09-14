@@ -1,0 +1,48 @@
+<div class="header2"><h2>Day3</h2></div>
+<div class="dataBinding">
+    <h2>Style Binding</h2>
+    <table>
+        <tr>
+            <th colspan="2">buttons below are some examples of style binding</th>
+        </tr>
+        <tr>
+            <td><button style="color: black;" [style.font-weight]="isBold ? 'bold' : 'normal'">Button1</button></td>
+            <td>button styled using inline style binding</td>
+        </tr>
+        <tr>
+            <td><button style="color: black" [ngStyle]="multiStyles()">Button2</button></td>
+            <td>button styled using multiple inline style binding</td>
+        </tr>
+        <tr>
+            <td colspan="2">Class Binding Examples</td>
+        </tr>
+        <tr>
+            <td><button >Button1</button></td>
+            <td>button without any class</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline">Button2</button></td>
+            <td>button with one class defined in css file</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline classItalic classColor">Button3</button></td>
+            <td>button with three classes defined in css file</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline" [class]="classesToApply">Button4</button></td>
+            <td>button with one class defined in css file another defined using property binding</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline" [class.classColor]="classApplyColor">Button5</button></td>
+            <td>button with one class defined in css file another defined using property binding</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline" [class.classColor]="!classApplyColor">Button6</button></td>
+            <td>button with one class defined in css file another defined using property binding</td>
+        </tr>
+        <tr>
+            <td><button class="classUnderline" [ngClass]="addClasses()">Button7</button></td>
+            <td>button with one class defined in css file another defined using property binding</td>
+        </tr>
+    </table>    
+</div>

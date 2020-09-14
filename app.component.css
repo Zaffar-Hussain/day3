@@ -1,0 +1,7 @@
+.classUnderline {text-decoration : underline;}
+.classItalic {font-style : italic; font-weight : bold;}
+.classColor {color : red}
+
+.dataBinding{
+    background-color: gainsboro;
+}
